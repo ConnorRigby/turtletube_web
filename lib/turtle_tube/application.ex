@@ -8,10 +8,8 @@ defmodule TurtleTube.Application do
   def start(_type, _args) do
     # List all child processes to be supervised
     children = [
-      # Start the endpoint when the application starts
       TurtleTubeWeb.Endpoint,
-      # Starts a worker by calling: TurtleTube.Worker.start_link(arg)
-      # {TurtleTube.Worker, arg},
+      TurtleTube.Presence,
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

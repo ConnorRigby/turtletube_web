@@ -1,1 +1,29 @@
-<img id="img" alt="loading....">
+
+<style>
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+</style>
+
+<h2 class="text-center">
+  Currently <strong id="numUsers"> </strong> users watching.
+</h2>
+
+<div class="text-center">
+<img id="img" class="rounded" src="<%= Routes.static_path(@conn, "/images/well-be-right-back.jpg") %>">
+</div>
+
+<footer class="footer">
+  Built with ❤ by Connor Rigby
+  <br/>
+  Twitter: <a href="https://twitter.com/pressy4pie/"> @PressY4Pie </a>
+  GitHub: <a href="https://github.com/ConnorRigby"> @ConnorRigby </a>
+  <br/>
+  Turtle icon provided by <a href="https://icons8.com"> icons8 </a>
+</footer>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
